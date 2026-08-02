@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zobop Store</title>
+</head>
+<body>
+  <h1>Bienvenue chez Zobop Store</h1>
+  <p>Mon store online 🚀</p>
+</body>
+</html>

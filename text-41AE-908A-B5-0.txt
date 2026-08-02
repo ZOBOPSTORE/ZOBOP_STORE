@@ -1,0 +1,31 @@
+"use client";
+
+import { useState } from "react";
+
+export default function Home() {
+  const [cart, setCart] = useState(0);
+
+  const products = [
+    { name: "Smartphone Premium", price: "$499" },
+    { name: "Écouteurs Sans Fil", price: "$79" },
+    { name: "Sneakers Urban", price: "$120" },
+    { name: "Chaussures Sport", price: "$95" },
+  ];
+
+  return (
+    <main>
+      <h1>🛍️ Zobop Store</h1>
+      <p>🛒 Panier : {cart} produit(s)</p>
+
+      {products.map((product) => (
+        <div key={product.name}>
+          <h2>{product.name}</h2>
+          <p>{product.price}</p>
+          <button onClick={() => setCart(cart + 1)}>
+            Ajouter au panier
+          </button>
+        </div>
+      ))}
+    </main>
+  );
+}

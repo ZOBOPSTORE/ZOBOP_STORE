@@ -1,0 +1,21 @@
+"use client";
+
+import { useState } from "react";
+
+export default function Home() {
+  const [cart, setCart] = useState(0);
+
+  return (
+    <main>
+      <h1>Zobop Store 🛍️</h1>
+
+      <p>
+        Panier : {cart}
+      </p>
+
+      <button onClick={() => setCart(cart + 1)}>
+        Ajouter au panier
+      </button>
+    </main>
+  );
+}

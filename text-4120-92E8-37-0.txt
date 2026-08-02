@@ -1,0 +1,10 @@
+"use client";
+
+export default function Home() {
+  return (
+    <main>
+      <h1>Zobop Store 🛍️</h1>
+      <p>Panier en préparation 🚀</p>
+    </main>
+  );
+}

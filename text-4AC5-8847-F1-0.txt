@@ -1,0 +1,72 @@
+export default function Home() {
+  const products = [
+    {
+      name: "Smartphone Premium",
+      category: "📱 Électronique",
+      price: "$499"
+    },
+    {
+      name: "Écouteurs Sans Fil",
+      category: "📱 Électronique",
+      price: "$79"
+    },
+    {
+      name: "Sneakers Urban",
+      category: "👟 Chaussures",
+      price: "$120"
+    },
+    {
+      name: "Chaussures Sport",
+      category: "👟 Chaussures",
+      price: "$95"
+    }
+  ];
+
+  return (
+    <main className="min-h-screen bg-gray-100 p-6">
+
+      <header className="bg-black text-white rounded-xl p-8 text-center">
+        <h1 className="text-4xl font-bold">
+          🛍️ Zobop Store
+        </h1>
+        <p className="mt-3">
+          Électronique & Chaussures en ligne
+        </p>
+      </header>
+
+      <section className="text-center my-10">
+        <h2 className="text-3xl font-bold">
+          Produits populaires
+        </h2>
+      </section>
+
+      <section className="grid md:grid-cols-2 gap-6">
+
+        {products.map((product) => (
+          <div 
+            key={product.name}
+            className="bg-white rounded-xl p-6 shadow"
+          >
+            <h3 className="text-2xl font-bold">
+              {product.name}
+            </h3>
+
+            <p className="mt-2">
+              {product.category}
+            </p>
+
+            <p className="text-xl font-bold mt-3">
+              {product.price}
+            </p>
+
+            <button className="mt-4 bg-black text-white px-5 py-2 rounded">
+              Ajouter au panier
+            </button>
+          </div>
+        ))}
+
+      </section>
+
+    </main>
+  );
+}

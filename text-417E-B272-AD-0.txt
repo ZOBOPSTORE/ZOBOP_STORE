@@ -1,0 +1,8 @@
+export default function Home() {
+  return (
+    <main>
+      <h1>Zobop Store</h1>
+      <p>Mon store online fonctionne 🚀</p>
+    </main>
+  );
+}

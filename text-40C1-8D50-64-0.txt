@@ -1,0 +1,19 @@
+"use client";
+
+import { useState } from "react";
+
+export default function Home() {
+  const products = [
+    { name: "Smartphone Premium", price: 499 },
+    { name: "Écouteurs Sans Fil", price: 79 },
+    { name: "Sneakers Urban", price: 120 },
+    { name: "Chaussures Sport", price: 95 },
+  ];
+
+  const [cart, setCart] = useState<string[]>([]);
+
+  function addToCart(product: string) {
+    setCart([...cart, product]);
+  }
+
+  return (

@@ -1,0 +1,33 @@
+export default function Home() {
+  return (
+    <main>
+      <header>
+        <h1>🛍️ Zobop Store</h1>
+        <p>Votre boutique électronique et chaussures en ligne</p>
+      </header>
+
+      <section>
+        <h2>Bienvenue chez Zobop Store</h2>
+        <p>Découvrez nos produits sélectionnés pour vous.</p>
+      </section>
+
+      <section>
+        <h2>📱 Électronique</h2>
+        <p>
+          Smartphones, écouteurs, montres connectées et accessoires.
+        </p>
+      </section>
+
+      <section>
+        <h2>👟 Chaussures</h2>
+        <p>
+          Sneakers, baskets et modèles tendance.
+        </p>
+      </section>
+
+      <button>
+        Voir les produits
+      </button>
+    </main>
+  );
+}
